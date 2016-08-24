@@ -1,0 +1,14 @@
+.fa-angle-up {
+	position: relative;
+	right :12px;
+	top: 0;
+}
+.iam-up .fa-angle-up {
+	opacity: 0;
+}
+.iam-down .fa-angle-down{
+	opacity: 0;
+}
+.iam-down .fa-angle-up{
+	opacity: 1;
+}

@@ -1,0 +1,14 @@
+<ul class="container">
+	<li ng-repeat="item in data track by $index">
+		<span accordion class="iam-up">
+			{{item.name}} 
+			<i ng-if="item.devices.length" class="fa fa-angle-down" aria-hidden="true"></i>
+			<i class="fa fa-angle-up" aria-hidden="true"></i>
+		</span>		
+		<ul ng-if="item.devices.length" ng-class="{'sub_list_present': item.devices.length}" class="hide">
+			<li ng-repeat="item in item.devices track by $index">
+				{{item.name}}
+			</li>
+		</ul>
+	</li>
+</ul>
